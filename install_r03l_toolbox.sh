@@ -30,7 +30,7 @@ while read -r p ; do sudo apt-get install -y $p ; done < <(cat << "EOF"
     cupp
     ripgrep
     bat
-    exa
+    lsd
     gobuster
     sqlmap
     hcxtools 
@@ -71,7 +71,7 @@ sleep 2
 echo export PATH=$PATH:~/.local/bin >> ~/.zshrc
 
 echo "alias grep='rg'" >> ~/.zshrc
-echo "alias ls='exa -alg --group-directories-first'" >> ~/.zshrc
+echo "alias ls='lsd -al --group-directories-first'" >> ~/.zshrc
 echo "alias cat='batcat'" >> ~/.zshrc
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
