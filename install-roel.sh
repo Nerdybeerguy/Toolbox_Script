@@ -16,7 +16,6 @@ while read -r p ; do sudo pacman -Sy --noconfirm $p ; done < <(cat << "EOF"
 	bat
 	lsd
 	tmux
-	pacseek
 	fd
 EOF
 )
@@ -42,7 +41,6 @@ echo "alias grep='rg'" >> ~/.zshrc
 echo "alias ls='lsd -al --group-directories-first'" >> ~/.zshrc
 echo "alias cat='bat'" >> ~/.zshrc
 echo "alias find='fd'" >> ~/.zshrc
-echo "alias yay='pacseek" >> ~/.zshrc'
 
 source ~/.zshrc
 
